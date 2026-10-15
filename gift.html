@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>piupiu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/gift.css" />
+</head>
+<body data-page="gift">
+
+  <nav class="navbar">
+    <a href="index.html" class="nav-logo">piupiu<span class="dot">.</span></a>
+    <ul class="nav-links">
+      <li><a href="voice.html">A Little Hi</a></li>
+      <li><a href="gallery.html">Our Little World</a></li>
+      <li><a href="cake.html">A Sweet Treat</a></li>
+      <li><a href="letter.html">Letter</a></li>
+      <li><a href="gift.html" class="active">Made for You</a></li>
+    </ul>
+  </nav>
+
+  <main class="page">
+    <div class="page-content page-wide">
+      <div class="section-head">
+        <span class="section-num">05 / Little Treats for You</span>
+        <h1 class="section-title">
+          Your Little <span class="script">coupons</span>
+        </h1>
+        <p class="section-desc">
+          Claim them whenever you want. No expiration date, promisee
+        </p>
+      </div>
+      <div class="gift-grid" id="giftGrid"></div>
+    </div>
+  </main>
+
+  <div class="gift-modal" id="giftModal" aria-hidden="true">
+    <div class="gift-modal-backdrop" data-close></div>
+    <div class="gift-modal-dialog" role="dialog" aria-modal="true">
+      <button class="gift-modal-close" data-close aria-label="Close">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <line x1="18" y1="6" x2="6" y2="18"/>
+          <line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
+
+      <div class="gift-ticket" id="giftTicket">
+        <div class="gift-ticket-head">
+          <span class="gift-ticket-brand">piupiu · voucher</span>
+          <span class="gift-ticket-code" id="modalCode">CODE-000</span>
+        </div>
+
+        <div class="gift-ticket-icon" id="modalIcon">🎁</div>
+
+        <h3 class="gift-ticket-title" id="modalTitle">Voucher</h3>
+        <p class="gift-ticket-desc" id="modalDesc">Deskripsi</p>
+
+        <div class="gift-ticket-divider">
+          <span class="gift-ticket-cut"></span>
+          <span class="gift-ticket-dashes"></span>
+          <span class="gift-ticket-cut"></span>
+        </div>
+
+        <div class="gift-ticket-barcode">
+          <div class="gift-barcode" id="modalBarcode"></div>
+          <span class="gift-ticket-serial" id="modalSerial">0000 0000 0000</span>
+        </div>
+
+        <div class="gift-ticket-foot">
+          <div class="gift-ticket-meta">
+            <span class="gift-ticket-meta-label">Status</span>
+            <span class="gift-ticket-meta-value" id="modalStatus">Ready to claim</span>
+          </div>
+          <button class="gift-ticket-claim" id="modalClaim">
+            <span id="modalClaimText">Claim voucher</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="page-nav">
+    <a href="letter.html" class="btn-prev">Back</a>
+    <span class="page-progress">
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot active"></span>
+      <span class="dot"></span>
+    </span>
+    <a href="ending.html" class="btn-next">
+      Next
+    </a>
+  </div>
+
+  <button id="musicToggle" class="music-toggle"><span class="music-icon">♪</span></button>
+  <audio id="bgMusic"></audio>
+
+  <script src="js/main.js"></script>
+  <script src="js/gift.js"></script>
+  <script src="js/pets.js"></script>
+</body>
+</html>

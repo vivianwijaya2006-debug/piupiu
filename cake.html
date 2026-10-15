@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>piupiu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/cake.css" />
+</head>
+<body data-page="cake">
+
+  <nav class="navbar">
+    <a href="index.html" class="nav-logo">piupiu<span class="dot">.</span></a>
+    <ul class="nav-links">
+      <li><a href="voice.html">A Little Hi</a></li>
+      <li><a href="gallery.html">Our Little World</a></li>
+      <li><a href="cake.html" class="active">A Sweet Treat</a></li>
+      <li><a href="letter.html">Letter</a></li>
+      <li><a href="gift.html">Made for You</a></li>
+    </ul>
+  </nav>
+
+  <main class="page page-cake">
+    <div class="page-content cake-page-content">
+
+      <header class="cake-header">
+        <span class="section-num">03 / A Sweet Treat</span>
+        <h1 class="section-title">
+          Make a wish, <span class="script">sayang</span>
+        </h1>
+        <p class="section-desc">
+          Light up all three candles, close your eyes, make a wish, and blow them out!
+        </p>
+      </header>
+
+      <div class="cake-status" id="cakeStatus">
+        <div class="cake-progress" id="candleProgress">
+          <span class="cake-progress-dot" data-c="1"></span>
+          <span class="cake-progress-dot" data-c="2"></span>
+          <span class="cake-progress-dot" data-c="3"></span>
+        </div>
+        <div class="cake-instruction" id="cakeInstruction">
+          <span class="cake-instruction-icon" id="cakeInstructionIcon">✨</span>
+          <span class="cake-instruction-text" id="cakeInstructionText">
+            Tap each candle to light them
+          </span>
+        </div>
+      </div>
+
+      <div class="cake-stage" id="cakeStage">
+        <div class="cake-fireflies" id="cakeFireflies" aria-hidden="true"></div>
+        <div class="cake-sparkles"  id="cakeSparkles"  aria-hidden="true"></div>
+        <div class="cake-lightbeam" id="cakeLightbeam" aria-hidden="true"></div>
+        <div class="cake" id="cakeEl">
+          <div class="cake-plate">
+            <div class="cake-plate-top"></div>
+            <div class="cake-plate-shadow"></div>
+          </div>
+
+          <div class="candle candle-1" data-candle="1" role="button" aria-label="Candle 1" tabindex="0">
+            <div class="candle-body"></div>
+            <div class="wick"></div>
+            <div class="flame"></div>
+            <div class="flame-glow"></div>
+            <div class="smoke"></div>
+          </div>
+
+          <div class="candle candle-2" data-candle="2" role="button" aria-label="Candle 2" tabindex="0">
+            <div class="candle-body"></div>
+            <div class="wick"></div>
+            <div class="flame"></div>
+            <div class="flame-glow"></div>
+            <div class="smoke"></div>
+          </div>
+
+          <div class="candle candle-3" data-candle="3" role="button" aria-label="Candle 3" tabindex="0">
+            <div class="candle-body"></div>
+            <div class="wick"></div>
+            <div class="flame"></div>
+            <div class="flame-glow"></div>
+            <div class="smoke"></div>
+          </div>
+
+          <div class="cake-layer layer-1">
+            <div class="cake-drip drip-1"></div>
+            <div class="cake-sprinkle-row row-1">
+              <span style="--d:0s;--c:#ffd77a"></span>
+              <span style="--d:0.15s;--c:#a8d8ea"></span>
+              <span style="--d:0.3s;--c:#ff8fa3"></span>
+              <span style="--d:0.45s;--c:#cdb4db"></span>
+              <span style="--d:0.6s;--c:#ffd77a"></span>
+            </div>
+          </div>
+
+          <div class="cake-layer layer-2">
+            <div class="cake-drip drip-2"></div>
+            <div class="cake-sprinkle-row row-2">
+              <span style="--d:0.2s;--c:#ff8fa3"></span>
+              <span style="--d:0.35s;--c:#ffd77a"></span>
+              <span style="--d:0.5s;--c:#a8d8ea"></span>
+              <span style="--d:0.65s;--c:#cdb4db"></span>
+            </div>
+          </div>
+
+          <div class="cake-layer layer-3">
+            <div class="cake-drip drip-3"></div>
+            <div class="cake-sprinkle-row row-3">
+              <span style="--d:0.1s;--c:#ffd77a"></span>
+              <span style="--d:0.25s;--c:#cdb4db"></span>
+              <span style="--d:0.4s;--c:#ff8fa3"></span>
+            </div>
+          </div>
+
+          <div class="cake-cherry">
+            <div class="cherry-stem"></div>
+            <div class="cherry-ball"></div>
+          </div>
+        </div>
+
+        <div class="cake-burst" id="cakeBurst" aria-hidden="true"></div>
+      </div>
+
+      <div class="cake-message-wrap">
+        <p id="cakeMessage" class="cake-message">
+          The candles are waiting for a spark.
+        </p>
+      </div>
+
+      <div class="cake-actions" id="cakeActions">
+
+        <div class="wish-input-wrap" id="wishInputWrap">
+          <label class="wish-label" for="wishInput">
+            <span class="wish-label-icon">💭</span>
+            <span>Write your wish</span>
+            <span class="wish-label-opt">optional</span>
+          </label>
+          <div class="wish-input-row">
+            <input
+              type="text"
+              id="wishInput"
+              class="wish-input"
+              placeholder="Something you hope for…"
+              maxlength="80"
+            />
+            <button class="wish-save" id="wishSave" aria-label="Save wish">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20 6L9 17l-5-5"/>
+              </svg>
+            </button>
+          </div>
+          <p class="wish-hint" id="wishHint">
+            Tap the cake when you're ready to blow ✨
+          </p>
+        </div>
+
+        <div class="wish-galaxy" id="wishGalaxy">
+          <div class="wish-galaxy-head">
+            <span class="wish-galaxy-label">
+              <span>✦</span> Your wishes
+            </span>
+            <span class="wish-galaxy-count" id="wishCount">0</span>
+          </div>
+          <div class="wish-galaxy-stars" id="wishGalaxyStars"></div>
+        </div>
+
+        <button class="cake-reset" id="cakeReset" hidden>
+          <span>↻</span> Do it again
+        </button>
+      </div>
+
+    </div>
+  </main>
+
+  <div class="page-nav">
+    <a href="gallery.html" class="btn-prev">Back</a>
+    <span class="page-progress">
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot active"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </span>
+    <a href="letter.html" class="btn-next">
+      Next
+    </a>
+  </div>
+
+  <button id="musicToggle" class="music-toggle"><span class="music-icon">♪</span></button>
+  <audio id="bgMusic"></audio>
+
+  <script src="js/main.js"></script>
+  <script src="js/cake.js"></script>
+  <script src="js/pets.js"></script>
+</body>
+</html>

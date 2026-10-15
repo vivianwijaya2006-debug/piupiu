@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>piupiu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/voice.css" />
+</head>
+<body data-page="voice">
+
+  <nav class="navbar">
+    <a href="index.html" class="nav-logo">piupiu<span class="dot">.</span></a>
+    <ul class="nav-links">
+      <li><a href="voice.html" class="active">A Little Hi</a></li>
+      <li><a href="gallery.html">Our Little World</a></li>
+      <li><a href="cake.html">A Sweet Treat</a></li>
+      <li><a href="letter.html">Letter</a></li>
+      <li><a href="gift.html">Made for You</a></li>
+    </ul>
+  </nav>
+
+  <main class="page page-center">
+    <div class="page-content voice-page-content">
+      <div class="section-head center voice-header">
+        <span class="section-num">01 / A Little Hi</span>
+        <h1 class="section-title">
+          A little message <span class="script">for you</span>
+        </h1>
+        <p class="section-desc">
+          I recorded something for you. Put on your headphones and listen closely.
+        </p>
+      </div>
+
+      <div class="voice-player" id="voicePlayer">
+        <div class="voice-glow" aria-hidden="true"></div>
+        <div class="voice-vinyl" id="voiceVinyl">
+          <div class="vinyl-disc">
+            <div class="vinyl-grooves"></div>
+            <div class="vinyl-label">
+              <span class="vinyl-label-icon">💙</span>
+            </div>
+            <div class="vinyl-shine"></div>
+          </div>
+          <div class="vinyl-arm" aria-hidden="true"></div>
+        </div>
+
+        <div class="voice-main">
+          <div class="voice-meta">
+            <div class="voice-meta-left">
+              <span class="voice-title">Voice Note</span>
+            </div>
+            <span class="voice-badge" id="voiceBadge">
+              <span class="voice-badge-dot"></span>
+              <span id="voiceBadgeText">Ready</span>
+            </span>
+          </div>
+
+          <div class="voice-wave-wrap" id="waveWrap" role="slider" aria-label="Seek">
+            <div class="voice-wave" id="waveform"></div>
+            <div class="voice-wave-progress" id="waveProgress"></div>
+            <div class="voice-wave-playhead" id="wavePlayhead"></div>
+          </div>
+
+          <div class="voice-time">
+            <span id="currentTime">0:00</span>
+            <span class="voice-time-sep">/</span>
+            <span id="duration">0:00</span>
+          </div>
+
+          <div class="voice-controls">
+            <button class="voice-ctrl voice-ctrl-back" id="backBtn" aria-label="Rewind 10s">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="11 17 6 12 11 7"/>
+                <polyline points="18 17 13 12 18 7"/>
+              </svg>
+            </button>
+
+            <button id="playBtn" class="voice-play-btn" aria-label="Play">
+              <span class="play-btn-inner">
+                <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" class="icon-play">
+                  <path d="M8 5v14l11-7z"/>
+                </svg>
+                <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" class="icon-pause">
+                  <path d="M6 5h4v14H6zm8 0h4v14h-4z"/>
+                </svg>
+              </span>
+              <span class="play-btn-pulse"></span>
+            </button>
+
+            <button class="voice-ctrl voice-ctrl-fwd" id="fwdBtn" aria-label="Forward 10s">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="13 17 18 12 13 7"/>
+                <polyline points="6 17 11 12 6 7"/>
+              </svg>
+            </button>
+          </div>
+
+        </div>
+
+        <audio id="voiceAudio" src="assets/audio/voice.mp3" preload="metadata"></audio>
+      </div>
+
+    </div>
+  </main>
+
+  <div class="page-nav">
+    <a href="index.html" class="btn-prev">Back</a>
+    <span class="page-progress">
+      <span class="dot"></span>
+      <span class="dot active"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </span>
+    <a href="gallery.html" class="btn-next">
+      Next
+    </a>
+  </div>
+
+  <button id="musicToggle" class="music-toggle"><span class="music-icon">♪</span></button>
+  <audio id="bgMusic" preload="auto"></audio>
+
+  <script src="js/main.js"></script>
+  <script src="js/voice.js"></script>
+  <script src="js/pets.js"></script>
+</body>
+</html>

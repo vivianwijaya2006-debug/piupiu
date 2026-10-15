@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>piupiu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/gallery.css" />
+</head>
+<body data-page="gallery">
+
+  <nav class="navbar">
+    <a href="index.html" class="nav-logo">piupiu<span class="dot">.</span></a>
+    <ul class="nav-links">
+      <li><a href="voice.html">A Little Hi</a></li>
+      <li><a href="gallery.html" class="active">Our Little World</a></li>
+      <li><a href="cake.html">A Sweet Treat</a></li>
+      <li><a href="letter.html">Letter</a></li>
+      <li><a href="gift.html">Made for You</a></li>
+    </ul>
+  </nav>
+
+  <main class="page">
+    <div class="page-content page-wide">
+
+      <div class="section-head">
+        <span class="section-num">02 / Our Little World</span>
+        <h1 class="section-title">
+          My favorite pictures <span class="script">of you &amp; us</span>
+        </h1>
+        <p class="section-desc">
+          Click on any photo to see it up close
+        </p>
+      </div>
+
+      <div class="gallery-bar">
+        <span class="gallery-count">
+          <span id="galleryCount">0</span> photos
+        </span>
+      </div>
+
+      <div class="gallery-grid" id="galleryGrid"></div>
+
+    </div>
+  </main>
+
+  <div class="page-nav">
+    <a href="voice.html" class="btn-prev">Back</a>
+    <span class="page-progress">
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot active"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </span>
+    <a href="cake.html" class="btn-next">
+      Next
+    </a>
+  </div>
+
+  <button id="musicToggle" class="music-toggle"><span class="music-icon">♪</span></button>
+  <audio id="bgMusic"></audio>
+
+  <div id="lightbox" class="lightbox">
+    <span class="lightbox-close" id="lightboxClose">&times;</span>
+
+    <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Previous">
+      <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="15 18 9 12 15 6"/>
+      </svg>
+    </button>
+
+    <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Next">
+      <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="9 18 15 12 9 6"/>
+      </svg>
+    </button>
+
+    <div class="lightbox-content">
+      <div class="lightbox-image-wrap">
+        <img id="lightboxImg" src="" alt="preview" />
+      </div>
+      <div class="lightbox-info">
+        <span class="lightbox-index" id="lightboxIndex">1 / 12</span>
+        <p id="lightboxCaption" class="lightbox-caption"></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script src="js/gallery.js"></script>
+  <script src="js/pets.js"></script>
+</body>
+</html>

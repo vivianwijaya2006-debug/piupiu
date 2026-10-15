@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>piupiu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Instrument+Serif:ital@0;1&family=Caveat:wght@400;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/letter.css" />
+</head>
+<body data-page="letter">
+
+  <nav class="navbar">
+    <a href="index.html" class="nav-logo">piupiu<span class="dot">.</span></a>
+    <ul class="nav-links">
+      <li><a href="voice.html">A Little Hi</a></li>
+      <li><a href="gallery.html">Our Little World</a></li>
+      <li><a href="cake.html">A Sweet Treat</a></li>
+      <li><a href="letter.html" class="active">Letter</a></li>
+      <li><a href="gift.html">Made for You</a></li>
+    </ul>
+  </nav>
+
+  <main class="page">
+    <div class="page-content page-wide">
+      <div class="section-head">
+        <span class="section-num">04 / Letter</span>
+        <h1 class="section-title">
+          Small <span class="script">Message</span>
+        </h1>
+        <p class="section-desc">
+          A letter I wrote for you. Read it slowly.
+        </p>
+      </div>
+
+      <div class="envelope-stage" id="envelopeStage">
+        <div class="envelope" id="envelope" role="button" tabindex="0" aria-label="Open envelope">
+          <div class="envelope-shadow"></div>
+          <div class="envelope-back"></div>
+
+          <div class="envelope-letter" id="envelopeLetter">
+            <div class="envelope-letter-icon">💌</div>
+          </div>
+
+          <div class="envelope-front"></div>
+          <div class="envelope-flap"></div>
+
+          <div class="envelope-seal" id="envelopeSeal">
+            <span>💙</span>
+          </div>
+        </div>
+        <p class="envelope-hint" id="envelopeHint">
+          Tap to open
+        </p>
+      </div>
+
+      <article class="letter-paper" id="letterPaper" hidden>
+        <div class="letter-texture"></div>
+        <div class="letter-holes"></div>
+
+        <header class="letter-header">
+          <div class="letter-meta">
+            <div class="letter-meta-item">
+              <span class="letter-meta-label">To</span>
+              <span class="letter-meta-value">Bayii kecayanganku</span>
+            </div>
+            <div class="letter-meta-divider">✦</div>
+            <div class="letter-meta-item right">
+              <span class="letter-meta-label">From</span>
+              <span class="letter-meta-value">Big Boss</span>
+            </div>
+          </div>
+          <div class="letter-underline"></div>
+        </header>
+
+        <span class="doodle doodle-heart"   aria-hidden="true">♡</span>
+        <span class="doodle doodle-star"    aria-hidden="true">✦</span>
+        <span class="doodle doodle-flower"  aria-hidden="true">✿</span>
+        <span class="doodle doodle-sparkle" aria-hidden="true">✨</span>
+
+        <section class="letter-section">
+          <p id="typedMessage1" class="letter-body"></p>
+        </section>
+
+        <figure class="polaroid-wrap" id="polaroidWrap">
+          <div class="polaroid">
+            <div class="polaroid-tape"></div>
+            <div class="polaroid-frame">
+              <img
+                src="assets/images/letter.jpg"
+                alt="Kita berdua"
+                loading="lazy"
+                onerror="this.src='assets/images/photo1.jpeg'"
+              />
+            </div>
+            <figcaption class="polaroid-caption">us, in one frame ♡</figcaption>
+          </div>
+        </figure>
+
+        <section class="letter-section">
+          <p id="typedMessage2" class="letter-body"></p>
+        </section>
+
+        <div class="quote-card" id="quoteCard" role="button" tabindex="0" aria-label="Change quote">
+          <div class="quote-mark">"</div>
+          <p class="quote-text" id="quoteText">
+            Every version of you is worth loving.
+          </p>
+          <span class="quote-hint">tap for another →</span>
+        </div>
+
+        <section class="letter-section">
+          <p id="typedMessage3" class="letter-body"></p>
+        </section>
+
+        <div class="polaroid-end" id="polaroidEnd">
+          <figure class="polaroid-end-item" data-end="1">
+            <div class="polaroid polaroid-mini">
+              <div class="polaroid-tape"></div>
+              <div class="polaroid-frame">
+                <img
+                  src="assets/images/photo4.jpeg"
+                  alt="Momen 1"
+                  loading="lazy"
+                  onerror="this.src='assets/images/photo4.jpeg'"
+                />
+              </div>
+              <figcaption class="polaroid-caption">♡</figcaption>
+            </div>
+          </figure>
+
+          <figure class="polaroid-end-item" data-end="2">
+            <div class="polaroid polaroid-mini">
+              <div class="polaroid-tape"></div>
+              <div class="polaroid-frame">
+                <img
+                  src="assets/images/photo5.jpeg"
+                  alt="Momen 2"
+                  loading="lazy"
+                  onerror="this.src='assets/images/photo5.jpeg'"
+                />
+              </div>
+              <figcaption class="polaroid-caption">♡</figcaption>
+            </div>
+          </figure>
+
+          <figure class="polaroid-end-item" data-end="3">
+            <div class="polaroid polaroid-mini">
+              <div class="polaroid-tape"></div>
+              <div class="polaroid-frame">
+                <img
+                  src="assets/images/photo7.jpeg"
+                  alt="Momen 3"
+                  loading="lazy"
+                  onerror="this.src='assets/images/photo7.jpeg'"
+                />
+              </div>
+              <figcaption class="polaroid-caption">♡</figcaption>
+            </div>
+          </figure>
+        </div>
+
+        <footer class="letter-footer" id="letterFooter">
+          <p class="letter-closing">— with love,</p>
+          <p class="letter-signature">Big Boss</p>
+          <p class="letter-date" id="letterDate">— 2025 —</p>
+        </footer>
+
+        <div class="letter-corner corner-tl"></div>
+        <div class="letter-corner corner-br"></div>
+      </article>
+
+    </div>
+  </main>
+
+  <div class="page-nav">
+    <a href="cake.html" class="btn-prev">Back</a>
+    <span class="page-progress">
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot active"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </span>
+    <a href="gift.html" class="btn-next">
+      Next
+    </a>
+  </div>
+
+  <button id="musicToggle" class="music-toggle"><span class="music-icon">♪</span></button>
+  <audio id="bgMusic"></audio>
+
+  <script src="js/main.js"></script>
+  <script src="js/letter.js"></script>
+  <script src="js/pets.js"></script>
+</body>
+</html>

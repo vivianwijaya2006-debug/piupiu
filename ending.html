@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>piupiu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/ending.css" />
+</head>
+<body data-page="ending">
+
+  <nav class="navbar">
+    <a href="index.html" class="nav-logo">piupiu<span class="dot">.</span></a>
+    <ul class="nav-links">
+      <li><a href="voice.html">A Little Hi</a></li>
+      <li><a href="gallery.html">Our Little World</a></li>
+      <li><a href="cake.html">A Sweet Treat</a></li>
+      <li><a href="letter.html">Letter</a></li>
+      <li><a href="gift.html">Made for You</a></li>
+    </ul>
+  </nav>
+
+  <main class="page page-center">
+    <div class="footer-doodles">
+      <span class="doodle d1">🐻</span>
+      <span class="doodle d2">💌</span>
+      <span class="doodle d3">🌙</span>
+      <span class="doodle d4">🎀</span>
+      <span class="doodle d5">☕</span>
+      <span class="doodle d6">🐱</span>
+    </div>
+
+    <div class="page-content ending-content">
+      <h1 class="ending-title">
+        Happy Birthday, <span class="script">sayangku</span>.
+      </h1>
+
+      <p class="ending-sub">
+        I hope this year brings you lots of happiness. <br class="br-mobile" />
+        I'll always be right here, by your side. ♡
+      </p>
+
+      <div class="ending-ornament">
+        <span class="ornament-line"></span>
+        <span class="ornament-icon">✦</span>
+        <span class="ornament-line"></span>
+      </div>
+
+      <div class="secret-box" id="secretBox" role="button" tabindex="0">
+        <div class="secret-inner">
+          <div class="secret-face secret-front">
+            <div class="secret-front-icon">💌</div>
+            <div class="secret-front-body">
+              <span class="secret-front-label">A little note</span>
+              <span class="secret-front-text">Click</span>
+            </div>
+            <div class="secret-front-arrow">→</div>
+          </div>
+          <div class="secret-face secret-back">
+            <p id="secretMessage">You make my life brighter and my heart fuller. I am so grateful for you.</p>
+            <span class="secret-back-hint">tap for another</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="ending-actions">
+        <button class="ending-chip" id="hugBtn">
+          <span class="ending-chip-icon">🫶</span>
+          <span class="ending-chip-text">puk puk</span>
+        </button>
+        <button class="ending-chip ending-chip-heart" id="heartBtn">
+          <span class="ending-chip-icon">💙</span>
+          <span class="ending-chip-text"><span id="heartCount">0</span></span>
+        </button>
+        <button class="ending-chip" id="kissBtn">
+          <span class="ending-chip-icon">💋</span>
+          <span class="ending-chip-text">kiss</span>
+        </button>
+      </div>
+
+      <div class="ending-sign">
+        <p class="ending-sign-text">
+          With love, from vivi yang sayang cekalii ko dericknya <span class="heart-beat">💙</span>
+        </p>
+        <p class="ending-copy">© 2026</p>
+      </div>
+
+    </div>
+
+    <div class="footer-hearts" id="footerHearts"></div>
+  </main>
+
+  <div class="page-nav">
+    <a href="gift.html" class="btn-prev">Back</a>
+    <span class="page-progress">
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot active"></span>
+    </span>
+    <a href="index.html" class="btn-next">
+      Start over
+    </a>
+  </div>
+
+  <button id="musicToggle" class="music-toggle"><span class="music-icon">♪</span></button>
+  <audio id="bgMusic"></audio>
+
+  <script src="js/main.js"></script>
+  <script src="js/ending.js"></script>
+  <script src="js/pets.js"></script>
+</body>
+</html>
