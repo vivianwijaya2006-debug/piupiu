@@ -221,9 +221,6 @@ body.page-ready .page-content {
   margin-right: auto;
 }
 
-/* ============================================================
-   PAGE NAVIGATION
-============================================================ */
 .page-nav {
   position: fixed;
   bottom: 0; left: 0; right: 0;
